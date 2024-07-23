@@ -1,0 +1,277 @@
+html, body {
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    margin: 0;
+    padding: 0;
+    background-image: url('background2.jpg');
+    background-size: cover; /* Cover the entire viewport */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-attachment: fixed; /* Keep the image fixed while scrolling */
+  }
+  
+  .navbar {
+    background-color: black; /* Black background */
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+    margin: 0; /* Remove any default margin */
+  }
+  
+  /* Logo Section */
+  #logoDiv {
+    cursor: pointer;
+  }
+  
+  #logo {
+    height: 40px; /* Adjust based on your logo */
+  }
+  
+  /* Search Form Styling */
+  .navbar form {
+    display: flex;
+    align-items: left;
+    margin: 0;
+  }
+  
+  .navbar input[type="text"] {
+    height: 35px;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+  }
+  
+  .navbar button {
+    padding: 8px 16px;
+    background-color: rgb(215, 35, 35); /* Adjust the color to match your theme */
+    color: rgb(245, 237, 237);
+    border: none;
+    cursor: pointer;
+  }
+  
+  .navbar button:hover {
+    background-color: rgb(185, 30, 30); /* Slightly darker on hover */
+  }
+  
+  /* Sign In/Out Links */
+  .navbar a#signOut {
+    padding: 8px 16px;
+    background-color: rgb(215, 35, 35); /* Adjust the color to match your theme */
+    color: rgb(245, 237, 237);
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .navbar a#signOut:hover {
+    background-color: rgb(185, 30, 30); /* Slightly darker on hover */
+  }
+  
+  
+  
+  /* General styling for the navigation bar */
+  #navBarSeconfLine {
+    background-color: rgb(43, 40, 40); /* Dark background for the navbar */
+    color: rgb(245, 237, 237); /* White text color */
+    text-align: center; /* Center the links */
+    padding: 10px 0; /* Padding around the navbar */
+    font-family: "Poppins", sans-serif; /* Modern font family */
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+    margin: 0; /* Remove any default margin */
+  }
+  
+  /* Styling for the links within the navbar */
+  #navBarSeconfLine a {
+    color: rgb(245, 237, 237); /* White text color */
+    padding: 12px 16px; /* Padding inside each link */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 16px; /* Set font size for the links */
+    display: inline-block; /* Display links in a line */
+    font-weight: bold; /* Bold font */
+    text-transform: uppercase; /* Capital letters */
+  }
+  
+  /* Add hover effect for links */
+  #navBarSeconfLine a:hover {
+    background-color: #555; /* Darker background on hover */
+    color: #fff; /* White text color on hover */
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+  /* Highlight the 'Movies' link with a different color */
+  #nav2MoviesTag {
+    background-color: rgb(215, 35, 35); /* Red background for 'Movies' link */
+    color: #ffffff; /* White text color for 'Movies' link */
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 600px) {
+    #navBarSeconfLine a {
+      display: block; /* Stack links vertically on small screens */
+      width: 100%; /* Full width links on small screens */
+      text-align: left; /* Align text to the left on small screens */
+      padding: 10px; /* Larger padding for easier touch */
+    }
+  }
+  
+  
+  
+  /* <!-------------------FooterCss---------------------------->*/
+    
+  /* General styles for the footer */
+  /* General styles for the footer */
+  #footer {
+    background-color: black;
+    color: rgb(245, 237, 237);
+    font-family: "Poppins", sans-serif;
+    padding: 20px 0;
+  }
+  
+  /* Styling for the container inside the footer */
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; /* Maintains space between main content and sidebar */
+  }
+  
+  /* Flex properties for side columns and main content */
+  aside, main {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  /* Main now acts as a grid container */
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr)); /* Creates a responsive grid */
+    gap: 20px; /* Space between grid items */
+  }
+  
+  /* Privacy note specific styles */
+  .privacyNote {
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  /* Header styles within footer */
+  h4 {
+    color: rgb(215, 35, 35);
+    margin-bottom: 10px;
+  }
+  
+  /* Link styling */
+  a {
+    color: rgb(245, 237, 237);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Style for paragraphs in footer */
+  p {
+    line-height: 1.6;
+  }
+  
+  /* Additional styling for the bottom paragraph */
+  #footerPara {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 0.9em;
+  }
+  
+  
+  
+  
+         
+  /* Styles for the movie section */
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .buttons-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .left-buttons button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    background-color: rgb(215, 35, 35);
+    color: rgb(245, 237, 237);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase; /* Convert text to uppercase */
+  }
+  
+  .right-button {
+    padding: 10px 20px;
+    background-color: rgb(215, 35, 35);
+    color: rgb(245, 237, 237);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase; /* Convert text to uppercase */
+  }
+  
+  .articles-container {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(150px, 1fr));
+  
+  }
+  
+  .articles-container .grid-item {
+    width: 150px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-right: 10px;
+  }
+  
+  .articles-container .grid-item h2 {
+    color: #fff; /* White text color */
+    font-family: "Poppins", sans-serif; /* Poppins font family */
+    font-size: 14px; /* Adjusted font size for h2 */
+    font-weight: 500;
+    text-transform: uppercase; /* Convert text to uppercase */
+  }
+  
+  .articles-container .grid-item p {
+    color: #fff; /* White text color */
+    font-family: "Poppins", sans-serif; /* Poppins font family */
+    font-size: 12px; /* Adjusted font size for p */
+    font-weight: 500;
+    text-transform: lowercase; /* Convert text to lowercase */
+  }
+  
+  .articles-container .grid-item img {
+    width: 100%;
+    height: auto;
+    max-width: 250px ; /* Add !important to ensure this rule takes precedence */
+    max-height: 300px !important; 
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  

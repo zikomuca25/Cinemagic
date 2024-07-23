@@ -1,0 +1,176 @@
+body {
+  background-image: url(userlogin.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: 'Poppins'; 
+}
+
+#form {
+  background-color: #1e1e1e; 
+  width: 50%;
+  border-radius: 10px; 
+  margin: 120px auto;
+  padding: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+}
+
+h1 {
+  font-family: 'Poppins';
+  text-align: center;
+  color: #fff;
+  font-weight: normal; /* Make the h1 not bold */
+}
+
+
+label {
+  color: #fff; 
+  font-family: 'Poppins'; 
+}
+.container {
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  justify-content: center; /* Horizontally center the container */
+  align-items: center; /* Vertically center the container */
+  text-align: center; /* Center align text */
+}
+
+input {
+  width: 60%; /* Reduced width */
+  height: 20px; /* Set a fixed height */
+  border-radius: 6px;
+  border: 3px solid #f5eded;
+  padding: 10px;
+  margin-bottom: 20px;
+  color: #fff;
+  background-color: transparent;
+  transition: box-shadow 0.3s;
+}
+
+#btn {
+  width: 60%; /* Reduced width */
+  height: 40px; /* Set a fixed height */
+  color: #fff;
+  background-color: #d72323;
+  padding: 10px;
+  font-size: large;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Poppins';
+}
+
+
+input:focus {
+  box-shadow: 0 0 5px 2px white;
+  outline: none; 
+}
+
+
+.nav-link {
+  color: #fff;
+  text-decoration: none; 
+  
+}
+
+.nav-link:hover {
+  text-decoration: underline; 
+}
+
+
+@media screen and (max-width: 1350px) {
+  #form {
+    width: 40%;
+    padding: 40px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #form {
+    width: 50%;
+    padding: 40px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #form {
+    width: 80%;
+    padding: 40px;
+  }
+}
+
+#form1 {
+  background-color:  #1e1e1e;
+  width: 40%;
+  border-radius: 10px;
+  padding: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 120px auto; /* Center vertically */
+}
+
+#form1 #heading {
+  font-family: 'Poppins';
+  text-align: center;
+  color: #fff;
+  font-weight: normal;
+}
+
+#form1 form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+}
+
+#form1 form div {
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
+#form1 form i {
+  margin-right: 300px;
+  color: white; /* Changed icon color to black */
+}
+
+#form1 form input[type="text"],
+#form1 form input[type="email"],
+#form1 form input[type="password"],
+#form1 form input[type="date"],
+#form1 form input[type="submit"] {
+  width: 73%; /* Adjusted width */
+  height: 40px; /* Adjusted height */
+  border-radius: 6px;
+  border: 3px solid #f5eded;
+  padding: 10px;
+  margin-bottom: 20px;
+  color: #fff;
+  background-color: transparent;
+  transition: box-shadow 0.3s;
+}
+
+#form1 form input[type="text"]:focus,
+#form1 form input[type="email"]:focus,
+#form1 form input[type="password"]:focus,
+#form1 form input[type="date"]:focus,
+#form1 form input[type="submit"]:focus {
+  box-shadow: 0 0 5px 2px white;
+  outline: none;
+}
+
+#form1 form #btn {
+  width: 60%; /* Adjusted width */
+  height: 40px; /* Adjusted height */
+  color: #fff;
+  background-color: #d72323;
+  padding: 10px;
+  font-size: large;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Poppins';
+}
+#form1 form input[type="date"] {
+  width: 300px; /* Adjusted fixed width */
+  height: 40px; /* Adjusted height */
+   }
+#form1 form input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1); /* Invert the color of the icon */}
